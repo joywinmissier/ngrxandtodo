@@ -1,0 +1,14 @@
+<div>
+    <form >
+      <label for="fname">First Name</label>
+      <input type="text" id="fname"  placeholder="Your name.." #firstName="ngModel" name="firstName" [(ngModel)]="todoDetail.firstName" >
+  
+      <label for="lname">Last Name</label>
+      <input type="text" id="lname" placeholder="Your last name.." #lastName="ngModel" name="lastName" [(ngModel)]="todoDetail.lastName">
+  
+      <label for="fname">Phone</label>
+      <input type="text" id="phone"  placeholder="Your phonenumber.." #phone="ngModel" name="phone" [(ngModel)]="todoDetail.phone">
+    
+      <input class ="submit" type="button" value="ADD" (click)="addTodo()">
+    </form>
+  </div>
